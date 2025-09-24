@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { FiStar, FiMessageCircle } from "react-icons/fi";
 import ScrollReveal from "./ScrollReveal";

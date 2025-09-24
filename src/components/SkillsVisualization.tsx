@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { FiCode, FiDatabase, FiGlobe, FiTool } from "react-icons/fi";
 import ScrollReveal from "./ScrollReveal";

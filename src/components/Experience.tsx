@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { FiCalendar, FiMapPin, FiBriefcase } from "react-icons/fi";
 
