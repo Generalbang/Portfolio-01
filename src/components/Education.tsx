@@ -231,6 +231,7 @@ const Education = () => {
               Certifications
             </h3>
 
+            {/* certification */}
             <div className='space-y-6'>
               {certifications.map((cert, index) => (
                 <motion.div

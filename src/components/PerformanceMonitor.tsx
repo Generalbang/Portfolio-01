@@ -10,7 +10,7 @@ const PerformanceMonitor = () => {
   useEffect(() => {
     // Function to send metrics to analytics or logging service
     const sendToAnalytics = (metric: PerformanceMetric) => {
-      console.log("Performance Metric:", metric);
+      // console.log("Performance Metric:", metric);
 
       // In a real application, you would send this to your analytics service
       // Example: gtag('event', metric.name, { value: metric.value, custom_map: { metric_rating: 'dimension1' } });

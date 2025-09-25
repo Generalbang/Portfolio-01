@@ -52,7 +52,7 @@ function App() {
     <ErrorBoundary>
       <div
         className={`min-h-screen transition-colors duration-300 ${
-          isDarkMode ? "dark" : ""
+          isDarkMode ? "" : "dark"
         }`}
       >
         <SEO />

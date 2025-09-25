@@ -209,9 +209,11 @@ const Footer = () => {
           className='flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-200 dark:border-gray-700'
         >
           <div className='flex items-center text-gray-600 dark:text-gray-400 text-sm mb-4 md:mb-0'>
-            <span>© {currentYear} Ojo Johnson Dare. Made with</span>
-            <FiHeart className='w-4 h-4 mx-1 text-red-500' />
-            <span>using React & TypeScript</span>
+            <span>
+              © {currentYear} Ojo Johnson Dare. Made with React & TypeScript
+            </span>
+            {/* <FiHeart className='w-4 h-4 mx-1 text-red-500' /> */}
+            {/* <span>using React & TypeScript</span> */}
           </div>
 
           <div className='flex items-center space-x-6'>

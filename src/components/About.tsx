@@ -55,6 +55,13 @@ const About = () => {
     },
   ];
 
+  const stats = [
+    { number: "3+", label: "Years Experience" },
+    { number: "10+", label: "Projects Completed" },
+    { number: "30%", label: "Performance Boost" },
+    { number: "92%", label: "Client Satisfaction" },
+  ];
+
   return (
     <section id='about' className='py-20 relative overflow-hidden'>
       {/* Floating Background Elements */}
@@ -211,12 +218,7 @@ const About = () => {
           className='mt-20'
         >
           <div className='grid grid-cols-2 md:grid-cols-4 gap-8'>
-            {[
-              { number: "3+", label: "Years Experience" },
-              { number: "10+", label: "Projects Completed" },
-              { number: "30%", label: "Performance Boost" },
-              { number: "92%", label: "Client Satisfaction" },
-            ].map((stat, index) => (
+            {stats.map((stat, index) => (
               <motion.div
                 key={stat.label}
                 initial={{ opacity: 0, scale: 0.5 }}

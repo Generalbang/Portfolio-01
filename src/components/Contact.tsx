@@ -87,7 +87,8 @@ const Contact = () => {
     {
       icon: FiMapPin,
       label: "Location",
-      value: "Surulere Quarters, Ile-Ife, Osun State, Nigeria",
+      // value: "Surulere Quarters, Ile-Ife, Osun State, Nigeria",
+      value: "Nigeria",
       href: "https://maps.google.com",
     },
   ];

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FiCalendar, FiMapPin, FiBriefcase } from "react-icons/fi";
+import CareerHighlight from "./CareerHighlight";
 
 const Experience = () => {
   const experiences = [
@@ -63,7 +64,8 @@ const Experience = () => {
         "Developed full-stack news application with Node.js, Express, MongoDB backend",
         "Implemented JWT authentication with role-based access control system",
         "Built responsive React frontend with TailwindCSS and modern UI components",
-        "Integrated React Query for efficient API state management and caching",
+        // "Integrated React Query for efficient API state management and caching",
+        "Integrated Context API for state management",
       ],
       technologies: [
         "Node.js",
@@ -72,11 +74,12 @@ const Experience = () => {
         "React",
         "TailwindCSS",
         "JWT",
-        "React Query",
+        // "React Query",
+        "Context API",
       ],
       achievements: [
         "Built complete authentication system",
-        "Implemented efficient data caching",
+        "Implemented efficient data fetching and management",
       ],
     },
     {
@@ -279,43 +282,7 @@ const Experience = () => {
         </div>
 
         {/* Summary Stats */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className='mt-20'
-        >
-          <div className='glass p-8 rounded-xl'>
-            <h3 className='text-2xl font-bold text-gray-800 dark:text-white mb-8 text-center'>
-              Career Highlights
-            </h3>
-            <div className='grid grid-cols-2 md:grid-cols-4 gap-6'>
-              {[
-                { number: "5+", label: "Years Experience" },
-                { number: "10+", label: "Projects Completed" },
-                { number: "40%", label: "Performance Improvement" },
-                { number: "30%", label: "User Engagement Boost" },
-              ].map((stat, index) => (
-                <motion.div
-                  key={stat.label}
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className='text-center'
-                >
-                  <div className='text-3xl md:text-4xl font-bold gradient-text mb-2'>
-                    {stat.number}
-                  </div>
-                  <div className='text-gray-600 dark:text-gray-400 text-sm'>
-                    {stat.label}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </motion.div>
+        <CareerHighlight />
       </div>
     </section>
   );

@@ -14,6 +14,8 @@ import {
   SiGithub,
   SiVercel,
   SiNetlify,
+  SiRailway,
+  SiHeroku,
 } from "react-icons/si";
 
 const Skills = () => {
@@ -50,6 +52,8 @@ const Skills = () => {
         { name: "GitHub", level: 90, icon: SiGithub },
         { name: "Vercel", level: 85, icon: SiVercel },
         { name: "Netlify", level: 80, icon: SiNetlify },
+        { name: "Railway", level: 80, icon: SiRailway },
+        { name: "Heroku", level: 80, icon: SiHeroku },
       ],
     },
   ];

@@ -5,9 +5,9 @@ import ScrollReveal from "./ScrollReveal";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "Product Manager",
-      company: "TechStart Inc.",
+      name: "Emmanuel Worgu",
+      role: "Co-founder",
+      company: "Visibuy",
       content:
         "Ojo delivered exceptional results on our e-commerce platform. His attention to detail and technical expertise helped us achieve a 40% improvement in load times and user engagement.",
       rating: 5,
@@ -15,29 +15,29 @@ const Testimonials = () => {
         "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
     },
     {
-      name: "Michael Chen",
-      role: "CTO",
-      company: "InnovateLab",
+      name: "Sarah Johnson",
+      role: "Product Manager",
+      company: "1791 Technology.",
       content:
         "Working with Ojo was a game-changer for our startup. He built a robust backend system that handles thousands of concurrent users seamlessly. Highly recommended!",
-      rating: 5,
+      rating: 4.5,
       avatar:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     },
     {
       name: "Emily Rodriguez",
       role: "Lead Developer",
-      company: "DigitalFlow",
+      company: "Visibuy",
       content:
-        "Ojo's code quality and problem-solving skills are outstanding. He transformed our legacy system into a modern, scalable application that our team loves working with.",
-      rating: 5,
+        "Ojo's code quality and problem-solving skills are outstanding. He walts into our system and works well with his team mates to build a modern, scalable application that we all are happy with.",
+      rating: 4,
       avatar:
         "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
     },
   ];
 
   const renderStars = (rating: number) => {
-    return Array.from({ length: 5 }, (_, i) => (
+    return Array.from({ length: 5.0 }, (_, i) => (
       <FiStar
         key={i}
         className={`w-5 h-5 ${
