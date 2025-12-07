@@ -56,11 +56,10 @@ const Contact = () => {
     setSubmitStatus("idle");
 
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 2000));
-
-      // In a real app, you would send this data to your backend
-      console.log("Form data:", data);
+      // Store form data in localStorage as JSON
+      const mails = JSON.parse(localStorage.getItem("mails") || "[]");
+      mails.push({ ...data, timestamp: new Date().toISOString() });
+      localStorage.setItem("mails", JSON.stringify(mails));
 
       setSubmitStatus("success");
       reset();

@@ -101,7 +101,7 @@ const About = () => {
             viewport={{ once: true }}
             className='text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed'
           >
-            Passionate about creating digital solutions that make a difference
+            Building Digital Solutions with Modern Technologies
           </motion.p>
         </motion.div>
 
@@ -119,10 +119,21 @@ const About = () => {
               </h3>
 
               <p className='text-gray-600 dark:text-gray-400 leading-relaxed mb-8'>
-                I'm a passionate Full-Stack Engineer with expertise in building
-                scalable web applications. With experience across startups,
-                e-commerce platforms, and personal projects, I bring creativity
-                and technical excellence to every challenge.
+                I'm a full-stack developer with 2+ years of experience creating
+                web applications that solve real problems. I've worked on
+                everything from eCommerce platforms to billing systems to health
+                tech interfaces.
+                <br className='mt-2' />
+                My approach combines technical skills with a focus on what
+                actually matters: applications that work reliably, load fast,
+                and make sense to users. I've delivered measurable results like
+                40% improvements in page load times and built secure
+                authentication systems handling multiple tenants.
+                <br className='mt-2' />
+                I'm comfortable across the full stack - from building responsive
+                React interfaces to architecting Node.js APIs to working with
+                Django backends. I believe in writing clean, maintainable code
+                and always learning new approaches.
               </p>
 
               <p className='text-gray-600 dark:text-gray-400 leading-relaxed mb-8'>

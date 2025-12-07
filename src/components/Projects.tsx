@@ -6,6 +6,7 @@ import ProjectFCard from "./ProjectFCard";
 import newsletImage from "../assets/newslet.png";
 import visibuyImage from "../assets/visibuy.png";
 import myportfolioImage from "../assets/my-portfolio.png";
+import jobtrackerImage from "../assets/jobtracker.png";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -22,6 +23,30 @@ const Projects = () => {
   };
 
   const projects = [
+    {
+      title: "JobTracker - Job application tracker",
+      description: "A beautiful, real-time job application dashboard, analytics, and secure authentication. Built to help developers never miss an opportunity and tracker applied jobs.",
+      longDescription: "JobTracker is a modern, production-ready full-stack web application that helps developers and job seekers organize, track, and analyze their entire job hunt in one place.Built with the latest Next.js 16 App Router and TypeScript, it delivers blazing-fast performance, server-side rendering, and a flawless user experience on both desktop and mobile. The entire UI is crafted with Tailwind CSS for pixel-perfect, responsive design and includes dark mode support out of the box",
+      image: jobtrackerImage,
+      technologies: ["Nextjs", "PostgreSQL", "Prisma", "JWT", "NextAuth"],
+      githubUrl: "https://github.com/Generalbang/job-tracker",
+      liveUrl: "https://job-tracker-v-one.vercel.app",
+      category: "Full-Stack",
+      featured: false,
+      date: "Dec 2025",
+      challenges: [
+        "Building a scalable Nextjs architecture",
+        "Integrating DB queries with Prisma",
+        "Optimizing database queries for better performance",
+      ],
+      features: [
+        "User registration and authentication",
+        "Adding jobs entry for easy monitoring",
+        "Real-time analytics",
+        "Search and filtering capabilities",
+        "Responsive design for all devices",
+      ],
+    },
     {
       title: "NewsLet - Full-Stack News App",
       description:
@@ -116,8 +141,8 @@ const Projects = () => {
         "Optimization",
         "Analytics",
       ],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
+      // githubUrl: "https://github.com",
+      // liveUrl: "https://example.com",
       category: "Frontend",
       featured: true,
     },

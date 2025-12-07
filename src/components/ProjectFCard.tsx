@@ -4,6 +4,7 @@ import LazyImage from "./LazyImage";
 import type { ProjectFCardProps } from "../interface/types";
 
 function ProjectFCard({ project, openModal, index }: ProjectFCardProps) {
+  console.log(project)
   return (
     <>
       <motion.div
@@ -49,6 +50,7 @@ function ProjectFCard({ project, openModal, index }: ProjectFCardProps) {
             <span className='px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 text-blue-700 dark:text-blue-300 text-sm font-semibold rounded-full'>
               {project.category}
             </span>
+            {!project.githubUrl ? <span>NDA</span> :
             <div className='flex space-x-3'>
               <motion.a
                 href={project.githubUrl}
@@ -70,7 +72,7 @@ function ProjectFCard({ project, openModal, index }: ProjectFCardProps) {
               >
                 <FiExternalLink className='w-5 h-5' />
               </motion.a>
-            </div>
+            </div>}
           </div>
 
           <h3 className='text-2xl font-bold text-gray-800 dark:text-white mb-4 group-hover:text-gradient transition-all duration-300 leading-tight'>

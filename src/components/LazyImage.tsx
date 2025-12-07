@@ -47,7 +47,7 @@ const LazyImage = ({
   };
 
   return (
-    <div className={`relative overflow-hidden ${className}`}>
+    <div className={`relative overflow-hidden ${className}`} ref={imgRef}>
       {/* Loading Placeholder */}
       {!isLoaded && !hasError && (
         <motion.div
@@ -88,7 +88,7 @@ const LazyImage = ({
       {/* Image */}
       {isInView && !hasError && (
         <motion.img
-          ref={imgRef}
+          
           src={src}
           alt={alt}
           onLoad={handleLoad}
